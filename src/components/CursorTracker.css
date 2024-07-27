@@ -1,0 +1,19 @@
+/* CursorTracker.css */
+
+.follower {
+  position: absolute;
+  border-radius: 50%; /* Makes the follower a circle */
+  border: 2px solid rgb(0, 0, 0); /* Outline of the follower */
+  background-color: transparent; /* Make the follower unfilled */
+  transform: translate(-50%, -50%);
+  transition: width 0.1s, height 0.1s;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); /* Pop-out effect */
+}
+
+.cursor {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%) rotate(45deg); /* Rotate the square */
+  transition: width 0.1s, height 0.1s;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); /* Pop-out effect */
+}
