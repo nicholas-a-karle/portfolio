@@ -13,15 +13,15 @@ app.use(bodyParser.json());
 // Setup nodemailer transport with Zoho SMTP settings
 const transporter = nodemailer.createTransport({
   host: process.env.HOST,
-  port: process.env.HOST_POST, // Use 465 for SSL or 587 for TLS
-  secure: (process.env.HOST_POST == 465), // true for 465, false for other ports
+  port: process.env.HOST_PORT, // Use 465 for SSL or 587 for TLS
+  secure: (process.env.HOST_PORT == 465), // true for 465, false for other ports
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
 });
 
-
+// Contact form endpoint
 app.post('/api/contact', (req, res) => {
   const { name, email, message } = req.body;
 
@@ -43,7 +43,13 @@ app.post('/api/contact', (req, res) => {
   });
 });
 
+// Status endpoint
 app.get('/api/status', (req, res) => {
+  res.status(200).json({ status: 'Server is running' });
+});
+
+// New root status endpoint
+app.get('/', (req, res) => {
   res.status(200).json({ status: 'Server is running' });
 });
 
