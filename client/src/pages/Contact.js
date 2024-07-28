@@ -51,7 +51,7 @@ const Contact = () => {
         <p>
           {serverStatus === 'Server is running'
             ? "Just fill in the form below and I'll get back to you!"
-            : "It looks like the server isn't running. I better go catch it."}
+            : "The contact form is being repaired. If you need to, contact me at nickkarle123456789@gmail.com."}
         </p>
         {serverStatus === 'Server is running' && (
           <form onSubmit={handleSubmit}>
