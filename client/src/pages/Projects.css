@@ -1,5 +1,6 @@
 .projectCardContainer {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 50px; /* Space between cards */
     padding: 5%;
@@ -12,7 +13,7 @@
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px #660708; /* Subtle shadow */
     padding: 1%; /* Spacing inside the card */
-    width: 40%; /* Make card responsive */
+    width: 50%; /* Make card responsive */
   }
   
   .projectImage {
