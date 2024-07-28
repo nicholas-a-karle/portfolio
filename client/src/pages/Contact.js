@@ -47,11 +47,11 @@ const Contact = () => {
   return (
     <div className='contactCardContainer'>
       <div className='contactCard'>
-        <h2>{serverStatus === 'Server is running' ? 'Contact Me!' : 'Sorry'}</h2>
+        <h2>{serverStatus === 'Server is running' ? 'Contact Me!' : 'Contact Me!'}</h2>
         <p>
           {serverStatus === 'Server is running'
             ? "Just fill in the form below and I'll get back to you!"
-            : "The contact form is being repaired. If you need to, contact me at nickkarle123456789@gmail.com."}
+            : "nicholasakarle@gmail.com"}
         </p>
         {serverStatus === 'Server is running' && (
           <form onSubmit={handleSubmit}>
