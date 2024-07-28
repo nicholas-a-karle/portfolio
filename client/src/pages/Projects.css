@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     gap: 50px; /* Space between cards */
     padding: 5%;
-    width: 90vw;
+    width: 100vw;
 }
 
 .projectCard {
