@@ -17,7 +17,7 @@ const Projects = () => {
       <ProjectCard
         title="Coco's Courier Company"
         image={`/projectImages/cocos.PNG`}
-        description="This game is about girl who flies on a broomstick to deliver packages. It was built in Unity. I worked on what I would call the backend"
+        description="This game is about a delivery woman who flies on a broomstick to deliver packages. It was built in Unity. I worked on what I would call the backend"
         link="https://yawgmoth.github.io/CocoBuild/"
       />
     </div>
