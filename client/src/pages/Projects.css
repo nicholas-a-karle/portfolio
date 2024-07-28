@@ -1,10 +1,11 @@
 .projectCardContainer {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px; /* Space between cards */
     padding: 5%;
-    width: 90%;
+    width: 90vw;
 }
 
 .projectCard {
