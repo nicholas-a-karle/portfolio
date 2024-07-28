@@ -1,0 +1,9 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 10px;
+  }
+  
+
+  

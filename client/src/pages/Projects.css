@@ -1,0 +1,25 @@
+.projectCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Space between cards */
+    padding: 5%;
+    width: 90%;
+}
+
+.projectCard {
+    background-color: #D3D3D3; /* Background color of the card */
+    color: #0B090A;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px #660708; /* Subtle shadow */
+    padding: 1%; /* Spacing inside the card */
+    width: 45%; /* Make card responsive */
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

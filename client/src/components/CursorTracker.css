@@ -1,19 +1,24 @@
 /* CursorTracker.css */
 
-.follower {
+.cursor {
   position: absolute;
   border-radius: 50%; /* Makes the follower a circle */
-  border: 2px solid rgb(0, 0, 0); /* Outline of the follower */
+  border: 2px solid #FFFFFF; /* Outline of the follower */
   background-color: transparent; /* Make the follower unfilled */
   transform: translate(-50%, -50%);
   transition: width 0.1s, height 0.1s;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); /* Pop-out effect */
+  box-shadow: 0 0 15px #0B090A; /* Pop-out effect */
+  pointer-events: none;
+  z-index: 9999;
 }
 
-.cursor {
+.follower {
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: #FFFFFF;
+  border-radius: 50%; /* Makes the follower a circle */
   transform: translate(-50%, -50%) rotate(45deg); /* Rotate the square */
   transition: width 0.1s, height 0.1s;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); /* Pop-out effect */
+  box-shadow: 0 0 15px #FFFFFF;
+  pointer-events: none;
+  z-index: 9999;
 }

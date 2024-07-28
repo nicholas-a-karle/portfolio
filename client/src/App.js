@@ -10,11 +10,12 @@ import Contact from './pages/Contact';
 import CursorTracker from './components/CursorTracker';
 
 import './App.css';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
     <Router>
-      <div>
+        <Navbar />
         <Routes>
           <Route path="/" element={ <>
             <CursorTracker />
@@ -33,7 +34,6 @@ const App = () => {
             <Contact />
             </>} />
         </Routes>
-      </div>
     </Router>
   );
 };

@@ -1,0 +1,29 @@
+/* src/App.css */
+
+* {
+  cursor: none;
+}
+
+.App {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  background-color: #161A1D;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.link {
+  text-decoration: none;
+  color: blue;
+}
