@@ -63,7 +63,6 @@ const Contact = () => {
             </label>
             <button type="submit">Send</button>
           </form>
-        {status && <p className={`status-message ${status.includes('success') ? 'success' : 'error'}`}>{status}</p>}
       </div>
     </div>
   );
