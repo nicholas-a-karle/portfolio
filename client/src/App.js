@@ -15,24 +15,40 @@ import Navbar from './components/Navbar';
 const App = () => {
   return (
     <Router>
-        <Navbar />
         <Routes>
           <Route path="/" element={ <>
+            <Navbar />
             <CursorTracker />
             <Home />
+            <Contact />
             </> } />
           <Route path="/about" element={ <>
+            <Navbar />
             <CursorTracker />
             <About />
+            <Contact />
             </>} />
           <Route path="/projects" element={ <>
+            <Navbar />
             <CursorTracker />
             <Projects />
+            <Contact />
             </>} />
           <Route path="/contact" element={ <>
+            <Navbar />
             <CursorTracker />
             <Contact />
             </>} />
+          <Route path="" element = {<>
+            <Navbar />
+            <CursorTracker />
+            <Contact />
+            </>}/>
+          <Route path="" element = {<>
+            <Navbar />
+            <CursorTracker />
+            <Contact />
+            </>}/>
         </Routes>
     </Router>
   );

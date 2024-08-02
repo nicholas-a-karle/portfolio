@@ -1,0 +1,15 @@
+/* Card.css */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 5%
+  }
+  
+  .card-wrapper {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #D3D3D3;
+  }
+  

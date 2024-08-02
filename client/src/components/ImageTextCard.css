@@ -1,29 +1,22 @@
 /* Projects.css */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust gap between cards */
-    padding: 1%;
-    position: relative; /* Ensure the container is positioned relative */
-    z-index: 1; /* Set z-index for the container */
-  }
   
   .card-link {
     text-decoration: none;
     color: inherit; /* Keeps text color from card */
   }
   
-  .card {
+  .image-text-card-wrapper {
     border: 1px solid #D3D3D3;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    width: 40vw; /* Adjust width of cards */
+    width: 60vw; /* Adjust width of cards */
     z-index: 1; /* Set z-index for individual cards */
     box-shadow: 0 4px 8px #660708; /* Subtle shadow */
+    background-color: #D3D3D3;
   }
   
-  .card:hover {
+  .image-text-card-wrapper:hover {
     transform: scale(1.05);
   }
   
@@ -34,16 +27,5 @@
   
   .card-content {
     padding: 16px;
+    color: #0B090A;
   }
-  
-  .card-title {
-    font-size: 1.25em;
-    margin: 0;
-    color: #D3D3D3;
-  }
-  
-  .card-description {
-    font-size: 1em;
-    color: #D3D3D3;
-  }
-  
