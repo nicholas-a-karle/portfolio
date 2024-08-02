@@ -9,8 +9,6 @@ const Contact = () => {
     message: '',
   });
 
-  console.log(process.env.REACT_APP_API_URL)
-
   const [status, setStatus] = useState('');
   const [serverStatus, setServerStatus] = useState('');
 
@@ -55,6 +53,7 @@ const Contact = () => {
             ? "Just fill in the form below and I'll get back to you!"
             : "nicholasakarle@gmail.com"}
         </p>
+        <p>{process.env.REACT_APP_API_URL}</p>
         {serverStatus === 'Server is running' && (
           <form onSubmit={handleSubmit}>
             <label>
