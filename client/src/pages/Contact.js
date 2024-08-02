@@ -10,7 +10,6 @@ const Contact = () => {
   });
 
   const [status, setStatus] = useState('');
-  const [serverStatus, setServerStatus] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
