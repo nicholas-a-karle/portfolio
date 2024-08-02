@@ -49,11 +49,13 @@ const Contact = () => {
       <div className='contactCard'>
         <h2>{serverStatus === 'Server is running' ? 'Contact Me!' : 'Contact Me!'}</h2>
         <p>
+          {process.env.REACT_APP_API_URL}
+        </p>
+        <p>
           {serverStatus === 'Server is running'
             ? "Just fill in the form below and I'll get back to you!"
             : "nicholasakarle@gmail.com"}
         </p>
-        <p>{process.env.REACT_APP_API_URL}</p>
         {serverStatus === 'Server is running' && (
           <form onSubmit={handleSubmit}>
             <label>
