@@ -31,6 +31,7 @@ const Contact = () => {
   useEffect(() => {
     const checkServerStatus = async () => {
       try {
+        console.log(process.env.REACT_APP_API_URL)
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/status`);
         if (response.status === 200) {
           setServerStatus('Server is running');
