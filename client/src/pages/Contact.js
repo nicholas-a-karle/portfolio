@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`https://portfolio-web-otdz.onrender.com/api/contact`, formData);
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/contact`, formData);
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' }); // Clear form fields
     } catch (error) {
@@ -27,35 +27,11 @@ const Contact = () => {
     }
   };
 
-  useEffect(() => {
-    const checkServerStatus = async () => {
-      try {
-        const response = await axios.get(`https://portfolio-web-otdz.onrender.com/api/status`);
-        if (response.status === 200) {
-          setServerStatus('Server is running');
-        } else {
-          setServerStatus('Server is not running');
-        }
-      } catch (error) {
-        setServerStatus('Server is not running');
-      }
-    };
-    checkServerStatus();
-  }, []);
-
   return (
     <div className='contactCardContainer'>
       <div className='contactCard'>
-        <h2>{serverStatus === 'Server is running' ? 'Contact Me!' : 'Contact Me!'}</h2>
-        <p>
-          {process.env.REACT_APP_API_URL}
-        </p>
-        <p>
-          {serverStatus === 'Server is running'
-            ? "Just fill in the form below and I'll get back to you!"
-            : "nicholasakarle@gmail.com"}
-        </p>
-        {serverStatus === 'Server is running' && (
+        <h2>Contact Me!</h2>
+        <p>Just fill in the form below and I'll get back to you!</p>
           <form onSubmit={handleSubmit}>
             <label>
               Name:
@@ -88,7 +64,6 @@ const Contact = () => {
             </label>
             <button type="submit">Send</button>
           </form>
-        )}
         {status && <p className={`status-message ${status.includes('success') ? 'success' : 'error'}`}>{status}</p>}
       </div>
     </div>
