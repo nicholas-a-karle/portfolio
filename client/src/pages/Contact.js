@@ -18,9 +18,8 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(`API URL: ${process.env.REACT_APP_API_URL}`);
     try {
-      await axios.post(`${process.env.REACT_APP_API_URL}/api/contact`, formData);
+      await axios.post(`https://portfolio-web-otdz.onrender.com/api/contact`, formData);
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' }); // Clear form fields
     } catch (error) {
@@ -31,7 +30,7 @@ const Contact = () => {
   useEffect(() => {
     const checkServerStatus = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/status`);
+        const response = await axios.get(`https://portfolio-web-otdz.onrender.com/api/status`);
         if (response.status === 200) {
           setServerStatus('Server is running');
         } else {
