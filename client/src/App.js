@@ -34,16 +34,6 @@ const App = () => {
             <Projects />
             <Contact />
             </>} />
-          <Route path="" element = {<>
-            <Navbar />
-            <CursorTracker />
-            <Contact />
-            </>}/>
-          <Route path="" element = {<>
-            <Navbar />
-            <CursorTracker />
-            <Contact />
-            </>}/>
         </Routes>
     </Router>
   );
